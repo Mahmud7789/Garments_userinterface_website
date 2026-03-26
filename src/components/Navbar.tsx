@@ -24,13 +24,16 @@ const Navbar = () => {
     //{ name: 'Contact', path: '/contact' },
   ];
 
+  const isHomePage = location.pathname === '/';
+  const isScrolled = scrolled || !isHomePage;
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary py-3 shadow-xl' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white py-3 shadow-xl' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
             <Shirt className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
-            <span className="text-lg sm:text-2xl font-bold text-white tracking-tight">
+            <span className={`text-lg sm:text-2xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>
               RATNO<span className="text-accent">GARMENTS</span>
             </span>
           </Link>
@@ -41,13 +44,17 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`nav-link ${location.pathname === link.path ? 'text-accent' : ''}`}
+                className={`transition-colors duration-300 font-medium ${
+                  isScrolled 
+                    ? (location.pathname === link.path ? 'text-accent' : 'text-slate-600 hover:text-accent') 
+                    : (location.pathname === link.path ? 'text-accent' : 'text-slate-300 hover:text-accent')
+                }`}
               >
                 {link.name}
               </Link>
             ))}
             <Link to="/contact" className="btn-primary py-2 px-5 text-sm">
-              Contact Us
+              Get a Quote
             </Link>
           </div>
 
@@ -55,7 +62,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-accent transition-colors"
+              className={`transition-colors duration-300 ${isScrolled ? 'text-primary hover:text-accent' : 'text-white hover:text-accent'}`}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -89,7 +96,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center btn-primary"
                 >
-                  Contact Us
+                  Get a Quote
                 </Link>
               </div>
             </div>
