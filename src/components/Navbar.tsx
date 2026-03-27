@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Shirt } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { assets } from '../assets/assets';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Products', path: '/products' },
     { name: 'Services', path: '/services' },
-    //{ name: 'Contact', path: '/contact' },
+    //{ name: 'ContactSection', path: '/contactsection' },
   ];
 
   const isHomePage = location.pathname === '/';
@@ -32,9 +33,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <Shirt className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
+            <img className='w-8 cursor-pointer' src={assets.logo} alt="Logo for Hospital" />
             <span className={`text-lg sm:text-2xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>
-              RATNO<span className="text-accent">GARMENTS</span>
+              RATNO<span className="text-accent"> GARMENTS</span>
             </span>
           </Link>
 

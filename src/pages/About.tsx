@@ -48,7 +48,7 @@ const About = () => {
                   <p className="text-sm text-slate-500">Years of Excellence</p>
                 </div>
                 <div className="p-4 bg-slate-50 rounded-lg border-l-4 border-accent">
-                  <p className="text-2xl font-bold text-primary">2000+</p>
+                  <p className="text-2xl font-bold text-primary">200+</p>
                   <p className="text-sm text-slate-500">Skilled Workforce</p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ const About = () => {
             {[
               {
                 title: 'High-Volume Production',
-                desc: 'Capacity to produce over 500,000 pieces per month across multiple product categories.'
+                desc: 'Capacity to produce over 50,000 pieces per month across multiple product categories.'
               },
               {
                 title: 'Design & Development',

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Shirt, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Shirt, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,10 +18,11 @@ const Footer = () => {
               A leading garments manufacturer committed to quality, innovation, and sustainable production. Specializing in premium denim and apparel for global markets.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-accent transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-accent transition-colors"><Linkedin size={20} /></a>
+              <a href="https://www.facebook.com/share/1Gs1oQfi8M/" target="blank" className="hover:text-accent transition-colors"><Facebook size={20} /></a>
+              <a href="#" target="blank" className="hover:text-accent transition-colors"><Twitter size={20} /></a>
+              <a href="#" target="blank" className="hover:text-accent transition-colors"><Instagram size={20} /></a>
+              <a href="#" target="blank" className="hover:text-accent transition-colors"><Linkedin size={20} /></a>
+              <a href="https://youtube.com/@ratnogarments?si=1saYo0O0x8k7WzBE" target="blank" className="hover:text-accent transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
 
@@ -53,15 +54,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="text-accent shrink-0 mt-1" size={18} />
-                <span>123 Industrial Area, Garment District, Dhaka, Bangladesh</span>
+                <span>Road - 01,Block - B, Yea khaza Bhaban, 4th Floor, Kalwalapara, Mirpur- 1, Dhaka-1216, Bangladesh</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="text-accent shrink-0" size={18} />
-                <span>+880 1234 567890</span>
+                <span>+880 1768166655</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="text-accent shrink-0" size={18} />
-                <span>info@ratnogarments.com</span>
+                <span>ratnogarments@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import {assets} from '../assets/assets';
 
 const Products = () => {
   const categories = [
@@ -9,7 +10,7 @@ const Products = () => {
       items: [
         { name: 'Slim Fit Denim', image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=600&auto=format&fit=crop', features: ['100% Cotton', 'Stretchable', 'YKK Zippers'] },
         { name: 'Regular Fit Jeans', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600&auto=format&fit=crop', features: ['Durable Fabric', 'Classic 5-Pocket', 'Reinforced Stitching'] },
-        { name: 'Distressed Denim', image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=600&auto=format&fit=crop', features: ['Hand-Crafted Rips', 'Modern Wash', 'Premium Feel'] },
+        { name: 'Distressed Denim', image: 'https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=600&auto=format&fit=crop', features: ['Hand-Crafted Rips', 'Modern Wash', 'Premium Feel'] },
       ]
     },
     {

@@ -9,7 +9,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1920&auto=format&fit=crop"
+            src="/public/images/Banner.png"
             alt="Garments Factory"
             className="w-full h-full object-cover brightness-[0.3]"
             referrerPolicy="no-referrer"
@@ -25,7 +25,7 @@ const Home = () => {
           >
             <span className="section-subtitle">Excellence in Apparel</span>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Premium <span className="text-accent">Jeans Pant</span> Manufacturing
+              Your Trusted Partner<span className="text-accent"> in Premium Clothing</span> Manufacturing
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
               Ratno Garments is a world-class manufacturer providing high-quality denim and apparel solutions for global brands. Precision, quality, and scale combined.
@@ -72,7 +72,7 @@ const Home = () => {
               className="lg:w-1/2"
             >
               <span className="section-subtitle">Our Specialty</span>
-              <h2 className="section-title">World-Class Jeans Pant Manufacturing</h2>
+              <h2 className="section-title">World-Class Clothing Manufacturing</h2>
               <p className="text-slate-600 mb-8 leading-relaxed">
                 We specialize in high-end denim production, utilizing state-of-the-art machinery and sustainable washing techniques. From raw denim to finished retail-ready products, we handle it all with unmatched expertise.
               </p>
