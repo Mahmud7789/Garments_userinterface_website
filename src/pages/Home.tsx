@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
-import { ArrowRight, CheckCircle2, Factory, Globe, ShieldCheck, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Factory, Globe, Import, ShieldCheck, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { assets } from '../assets/assets';
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/public/images/Banner.png"
+            src={assets.banner}
             alt="Garments Factory"
             className="w-full h-full object-cover brightness-[0.3]"
             referrerPolicy="no-referrer"
