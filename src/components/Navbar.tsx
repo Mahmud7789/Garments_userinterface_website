@@ -55,7 +55,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link to="/contact" className="btn-primary py-2 px-5 text-sm">
-              Get a Quote
+              Contact
             </Link>
           </div>
 
@@ -97,7 +97,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center btn-primary"
                 >
-                  Get a Quote
+                  Contact
                 </Link>
               </div>
             </div>
