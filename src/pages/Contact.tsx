@@ -25,7 +25,7 @@ const Contact = () => {
     //const formspreeId = import.meta.env.VITE_FORMSPREE_ID || 'xpzeonwa'; // Fallback for demo if not set
 
     try {
-      const response = await fetch(`https://formspree.io/f/xeeponnq`, {
+      const response = await fetch(`https://formspree.io/f/xvzvgydp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
